@@ -3,7 +3,7 @@ using namespace std;
 // Polymorphism - Operator Overloading
 // complex number formula = real + i<< img//
 
-class Complex
+class Complex// default constructor is called because compiler will not call constructor so user will call it's ow
 {
     int real;
     int img;
