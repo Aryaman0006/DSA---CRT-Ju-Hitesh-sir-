@@ -2,17 +2,20 @@
 using namespace std;
 // Polymorphism - Operator Overloading
 // complex number formula = real + i<< img//
-#include <iostream>
-using namespace std;
-// Polymorphism - Operator Overloading
-// complex number formula = real + i<< img//
 
 class Complex
 {
     int real;
     int img;
     
+    
+    
+    
     public:
+    Complex()
+    {
+        
+    }
     Complex(int real,int img)
     {
         this->real=real;
@@ -21,6 +24,8 @@ class Complex
     
     Complex operator + (Complex &c)
     {
+
+    Complex ans;
     ans.real= real+c.real;
     ans.img= img+c.img;
     return ans;
