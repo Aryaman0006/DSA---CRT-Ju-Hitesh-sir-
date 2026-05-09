@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+// inheritance SINGLE LEVEL
+
+class Human
+{
+    protected:
+    string name;
+};
+
+
+class person: public Human
+{
+    int age;
+    
+    public:
+    person ( string n,int a)
+    {
+        name=n;
+        age=a;
+        
+    }
+    void display()
+    {
+        cout<<name<<" "<<age<<endl;
+        
+    }
+};
+  
+   int main()
+{ 
+   person obj( "Aryaman", 21);
+   obj.display();
+}
+    
+    
+    
+    
+    
+    
