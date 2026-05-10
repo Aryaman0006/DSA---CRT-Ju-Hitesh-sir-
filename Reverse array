@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int arr[6] = {2,4,3,8,9,1};
+    int i = 0, j = 5;
+
+    while(i <= j)
+    {
+        swap(arr[i], arr[j]);
+        i++;
+        j--;
+    }
+
+    // print reversed array
+    for(int k = 0; k < 6; k++)
+    {
+        cout << arr[k] << " ";
+    }
+
+    return 0;
+}
