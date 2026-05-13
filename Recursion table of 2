@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+void table(int i, int n)
+{
+    // base condition
+    if ( i==n+1)
+    
+    return;
+    cout<< 2*i<<endl;
+    table(i+1, n);
+}
+
+
+int main()
+{
+    int n;
+    cin>>n;
+    table(1,n);
+}
