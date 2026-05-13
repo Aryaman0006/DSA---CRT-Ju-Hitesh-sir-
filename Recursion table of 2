@@ -7,7 +7,7 @@ void table(int i, int n)
     if ( i==n+1)
     
     return;
-    cout<< 2*i<<endl;
+    cout<< '2' << 'x' << i << '=' << 2*i<<endl;
     table(i+1, n);
 }
 
